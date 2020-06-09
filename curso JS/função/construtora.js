@@ -1,7 +1,7 @@
 function carro(velocidadeMaxima = 200, a = 5) {
     let velocidade = 0 // com o let, a variavel está presa dentro da f(carro)
 
-    this.acelerar = function() {
+    this.acelerar = () => {
         if(velocidade + a <= velocidadeMaxima) {
             velocidade += a
         } else {
