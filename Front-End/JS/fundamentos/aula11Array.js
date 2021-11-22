@@ -18,7 +18,17 @@ console.log(' ')
 
 delete valores[2] // ele deleta o valor do espaço [2], mas não reorganiza, deixa vazio
 console.log(valores)
+console.log('')
 
 console.log(delete valores[3]) // ele só retorna uma execução da função bool 
+console.log('')
+
 console.log(valores) // prova da remoção do elemento por delete
+console.log('')
+
+console.log('Remoção por splice')
+valores.splice(2,1) // remove a posição array[2], apenas 1 elemento), remove o espaço vazio.
+console.log(valores)
+console.log('')
+
 console.log(typeof valores) // array é um objeto
