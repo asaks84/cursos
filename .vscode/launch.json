@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/Front-End/JS/fundamentos/variaveisEmLooping.js"
+            "program": "${workspaceFolder}/Front-End/JS/funcao/callback1.js"
         }
     ]
 }
