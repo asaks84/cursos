@@ -1,0 +1,16 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Me =)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baiduh/cursos/issues"
+  },
+  "homepage": "https://github.com/baiduh/cursos#readme",
+  "type": "module"
+}
