@@ -16,11 +16,6 @@ export class Conta {
 
     get saldo() { return this.#saldo; }
     get cliente() { return this.#cliente; }
-    set cliente(novoCliente) {
-        if (novoCliente instanceof Cliente) {
-            this.#cliente = novoCliente;
-        }
-    }
 
     // operações com a conta (métodos)
     sacar(valor) {

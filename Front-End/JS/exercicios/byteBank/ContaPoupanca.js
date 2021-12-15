@@ -9,6 +9,5 @@ export class ContaPoupanca extends Conta{
         super(agencia, cliente, saldoInicial, tipo);
         ContaPoupanca.#numeroDeContaCorrente++; // atribuindo num. de conta através do static
         this.numeroDaConta = ContaPoupanca.#numeroDeContaCorrente;
-    }
-     
+    }  
 }
