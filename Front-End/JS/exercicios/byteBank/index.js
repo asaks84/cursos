@@ -1,26 +1,27 @@
-import {Cliente} from "./Cliente.js";
+import { Cliente } from "./Cliente.js";
 import { ContaCorrente } from "./ContaCorrrente.js";
+import { Conta } from "./Conta.js";
+import { ContaPoupanca } from "./ContaPoupanca.js";
 
 // Cadastrando Clientes
 const cliente1 = new Cliente("Ricardo", 11122233309);
 
-const cliente2 = new Cliente("Alice", 88822233309);
-
 // Criando conta do cliente
-const conta1 = new ContaCorrente(1001, cliente1);
-const conta2 = new ContaCorrente(1001, cliente2);
+const contaCorrente1 = new ContaCorrente(1001, cliente1, 500);
+const contaPoupanca1 = new ContaPoupanca(1001, cliente1, 300);
+const contaCorrente2 = new ContaCorrente(1001, cliente1, 50);
+
 
 //movimentações
-let valorDaMovimentacao = 100;
-conta1.depositar(500);
-conta1.transferir(valorDaMovimentacao, conta2);
+contaCorrente2.sacar(100);
 
-let dadosDoCliente = conta2; 
+let dadosDaConta = contaCorrente2;
 
 console.log(
-`Cliente: ${dadosDoCliente.cliente.nome}
-CPF: ${dadosDoCliente.cliente.cpf}
-Agência: ${dadosDoCliente.agencia}
-Conta: ${dadosDoCliente.conta}
-Saldo: ${dadosDoCliente.saldo}`
+`Cliente: ${dadosDaConta.cliente.nome}
+CPF: ${dadosDaConta.cliente.cpf}
+Agência: ${dadosDaConta.agencia}
+Conta: ${dadosDaConta.numeroDaConta}
+Tipo: ${dadosDaConta._tipo}
+Saldo: ${dadosDaConta.saldo}`
 );
